@@ -1,0 +1,522 @@
+@import url('reset.css');
+@import url('style.css');
+.banner {
+    max-width: 100%;
+    height: 560px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+.index-banner {
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.index-banner-video {
+    width: 100%;
+    /* max-height: 100vh; */
+}
+
+.about-banner {
+    background-image: url(../img/banner/about_banner.jpg);
+}
+
+.service-banner {
+    background-image: url(../img/banner/service_banner.jpg);
+}
+
+.programme-banner {
+    background-image: url(../img/banner/programme_banner.jpg);
+}
+
+.version-banner {
+    background-image: url(../img/banner/version_banner.jpg);
+}
+
+.knowledge-banner {
+    background-image: url(../img/banner/knowledge_banner.jpg);
+}
+
+.portfolios-banner {
+    background-image: url(../img/banner/portfolios_banner.jpg);
+}
+
+.contact-banner {
+    background-image: url(../img/banner/contact_banner.jpg);
+}
+
+.index-content h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.index-content h2::before {
+    content: "";
+    border-bottom: 1px solid #333;
+    width: 100px;
+    margin: auto 40px auto 0;
+}
+
+.index-content h2::after {
+    content: "";
+    border-bottom: 1px solid #333;
+    width: 100px;
+    margin: auto 0 auto 40px;
+}
+
+.index-cooperate {
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-cooperate-li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.index-icon {
+    width: 80px;
+}
+
+.index-icon-text {
+    width: 380px;
+    text-align: left;
+    /* margin-bottom: 10px; */
+    padding: 10px;
+}
+
+.about-content {
+    margin-top: 60px;
+}
+
+.about-content-img {
+    width: 600px;
+    height: 600px;
+}
+
+.about-content-img div {
+    background-position: center center;
+    background-size: cover;
+    transition: .5s;
+}
+
+.about-content-img div:hover {
+    flex-grow: 5;
+    opacity: 1;
+}
+
+.about-img-1 {
+    background-image: url('../img/about_us_1.jpg');
+    flex-grow: 1;
+    opacity: 0.7;
+}
+
+.about-img-2 {
+    background-image: url('../img/about_us_2.jpg');
+    flex-grow: 1;
+    opacity: 0.7;
+}
+
+.about-img-3 {
+    background-image: url('../img/about_us_3.jpg');
+    flex-grow: 2;
+    opacity: 1;
+}
+
+.about-content-text {
+    width: 500px;
+    padding: 10px;
+}
+
+.service-line {
+    display: block;
+    width: 400px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid #00A8B8;
+}
+
+.programme {
+    background-image: url('../img/bg/programme_bg_1.jpg');
+    width: 300px;
+    height: 400px;
+}
+
+.programme h2 {
+    color: #E4007F;
+}
+
+.programme p {
+    height: 150px;
+    text-align-last: left;
+    padding: 20px 30px;
+}
+
+#version-tab {
+    width: 980px;
+    margin: 60px auto;
+}
+
+
+/* 頁籤ul */
+
+#version-tab>ul {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 10px 20px 0 20px;
+}
+
+#version-tab>ul>li {
+    list-style-type: none;
+}
+
+
+/* 頁籤上的文字 */
+
+#version-tab>ul>li>a {
+    text-decoration: none;
+    font-size: 24px;
+    background-color: white;
+    color: #00A8B8;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    border: solid 1px #00A8B8;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/*頁籤div內容*/
+
+#version-tab>div {
+    clear: both;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*第一筆的底色*/
+
+.version-span:target~#version-tab>ul li:first-child a {
+    background-color: white;
+    color: #00A8B8;
+}
+
+.version-span:target~#version-tab>div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*頁籤變換&第一筆*/
+
+.version-span~#version-tab>ul li:first-child a,
+#version-tab-1:target~#version-tab>ul li a[href$="#version-tab-1"],
+#version-tab-2:target~#version-tab>ul li a[href$="#version-tab-2"],
+#version-tab-3:target~#version-tab>ul li a[href$="#version-tab-3"] {
+    background-color: #00A8B8;
+    color: white;
+}
+
+
+/*頁籤內容顯示&第一筆*/
+
+.version-span~#version-tab>div:first-of-type,
+#version-tab-1:target~#version-tab>div.version-tab-content-1,
+#version-tab-2:target~#version-tab>div.version-tab-content-2,
+#version-tab-3:target~#version-tab>div.version-tab-content-3 {
+    visibility: visible;
+    height: auto;
+    background: #fff;
+    border: solid 1px #00A8B8;
+}
+
+.version-span {
+    display: none;
+}
+
+.knowledge-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.knowledge-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.knowledge-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    border: 1px solid #F4D482;
+    background-color: white;
+}
+
+.knowledge-title {
+    width: 400px;
+    height: 300px;
+}
+
+.knowledge-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.knowledge-img-h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knowledge-content {
+    position: relative;
+    width: 800px;
+    padding: 5%;
+}
+
+.knowledge-content a {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.btn-more {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #00A8B8;
+    border-radius: 30px;
+    height: 60px;
+    width: 150px;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: left;
+    color: #00A8B8;
+    display: inline-block;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.btn-more:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 24px;
+    border-color: transparent transparent transparent #00A8B8;
+    position: absolute;
+    right: 20%;
+    top: 30%;
+}
+
+.btn-more:hover {
+    background: #00A8B8;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.btn-more:hover:after {
+    border-color: transparent transparent transparent white;
+}
+
+.knowledge-introduce {
+    background: #FFFFFF;
+    border: 1px solid #F4D482;
+    padding: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledge-introduce h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.knowledge-introduce img {
+    margin-bottom: 60px;
+}
+
+.portfolios-line {
+    display: block;
+    width: 200px;
+    border-bottom: 2px solid #00A8B8;
+}
+
+.portfolios-text {
+    width: 66%;
+}
+
+.owl-theme .item {
+    height: 300px;
+    /* background: #4dc7a0; */
+    padding: 10px;
+    text-align: center;
+}
+
+.owl-carousel .item p {
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content h3 {
+    color: #E4007F;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-form-li {
+    width: 45%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-form-li h4 {
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.contact-form-li input {
+    height: 30px;
+    font-size: 18px;
+    width: 300px;
+    padding: 24px 12px;
+    border-radius: 26px;
+    border: 1px solid #333;
+}
+
+.contact-gender input {
+    height: 10px;
+    width: 10px;
+    zoom: 2;
+}
+
+.contact-gender span {
+    font-size: 18px;
+    height: 30px;
+    padding: 10px;
+}
+
+.type {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 300px;
+}
+
+.type::after {
+    content: "▼";
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    pointer-events: none;
+    zoom: 2;
+}
+
+.select {
+    /*移除箭頭樣式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 50px;
+    font-size: 18px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 26px;
+    border: 1px solid #333;
+}
+
+
+/*IE隱藏箭頭樣式*/
+
+.select::-ms-expand {
+    display: none;
+}
+
+.contact-form-li input:focus,
+.contact-form-li:focus,
+.select:focus,
+.contact-textarea:focus {
+    border: 0px;
+    outline: 2px solid #00A8B8;
+}
+
+.contact-gender input:focus {
+    outline: 0px;
+}
+
+.select option {
+    border-radius: 26px;
+}
+
+.contact-long {
+    width: 100%;
+}
+
+.contact-long input {
+    width: 90%;
+}
+
+.contact-textarea {
+    height: 300px;
+    font-size: 18px;
+    width: 90%;
+    padding: 24px 12px;
+    border-radius: 26px;
+    border: 1px solid #333;
+}
+
+.submit:hover {
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 0 5px 1px #fff;
+}
