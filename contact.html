@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -45,10 +46,11 @@
         <ul class="contact-form">
             <li class="contact-form-li">
                 <h4>姓名(*)</h4>
-                <input class="name" type="text" placeholder="姓名" onfocus="this.placeholder=''" onblur="this.placeholder='姓名'">
+                <input class="name required" type="text" placeholder="姓名" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='姓名'">
             </li>
             <!-- 姓別 -->
-            <li class="contact-form-li contact-gender">
+            <li class="contact-form-li contact-gender required">
                 <h4>姓別(*)</h4>
                 <input class="male" type="radio" name="one" />
                 <span>先生</span>
@@ -57,11 +59,13 @@
             </li>
             <li class="contact-form-li">
                 <h4>email(*)</h4>
-                <input class="name" type="text" placeholder="email" onfocus="this.placeholder=''" onblur="this.placeholder='email'">
+                <input class="name required" type="text" placeholder="email" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='email'">
             </li>
             <li class="contact-form-li">
                 <h4>連絡電話(*)</h4>
-                <input class="name" type="text" placeholder="連絡電話" onfocus="this.placeholder=''" onblur="this.placeholder='連絡電話'">
+                <input class="name required" type="text" placeholder="連絡電話" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='連絡電話'">
             </li>
             <li class="contact-form-li">
                 <h4>詢問的網站類型</h4>
@@ -71,7 +75,7 @@
                         <option value="2">一頁式網站</option>
                         <option value="3">購物網站</option>
                         <option value="4">企業形象網站</option>
-                  </select>
+                    </select>
                 </div>
             </li>
             <li class="contact-form-li">
@@ -82,12 +86,13 @@
                         <option value="2">基本方案</option>
                         <option value="3">進階方案</option>
                         <option value="4">客制方案</option>
-                  </select>
+                    </select>
                 </div>
             </li>
             <li class="contact-form-li contact-long">
                 <h4>地址(地區/縣市)</h4>
-                <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''" onblur="this.placeholder='地址'">
+                <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='地址'">
             </li>
             <li class="contact-form-li contact-long">
                 <h4>預算</h4>
@@ -97,7 +102,7 @@
                         <option value="2">1萬~5萬</option>
                         <option value="3">5萬~10萬</option>
                         <option value="4">10萬以上</option>
-                  </select>
+                    </select>
                 </div>
             </li>
             <li class="contact-form-li contact-long">
@@ -109,10 +114,11 @@
             </li>
         </ul>
     </div>
+    <!-- 表尾 -->
     <div class="fotter ">
         <div class="footer-wrapper flex-block-between mb-60 ">
             <div class="footer-img ">
-                <img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo ">
+                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
                 <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
                 <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
@@ -144,8 +150,15 @@
         </div>
     </div>
     <script>
-        document.getElementById("submit").addEventListener("click", function() {
-            swal("送出成功", "此為學習、展示之用，無法幫忙製作網頁", "success");
+        // 跳出視窗
+        document.getElementById("submit").addEventListener("click", function () {
+            // 目前只判斷姓名
+            let required = document.getElementsByClassName("required")[0];
+            if (required.value !== "" && required.value !== null) {
+                swal("送出成功", "此為學習、展示之用，無法幫忙製作網頁", "success");
+            } else {
+                swal("送出失敗，必填欄位未輸入", "此為學習、展示之用，無法幫忙製作網頁", "error");
+            }
         });
     </script>
 </body>

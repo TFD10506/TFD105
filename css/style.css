@@ -314,11 +314,6 @@ p {
     padding-bottom: 60px;
 }
 
-
-/* .pl-60{
-    padding-left: 60px;
-} */
-
 .p-30 {
     padding: 30px;
 }
@@ -326,7 +321,7 @@ p {
 .bg-white {
     background-color: #fff;
 }
-
+/* 表尾 */
 .fotter {
     background-image: url("../img/fotter/fotter.jpg");
     background-size: cover;
