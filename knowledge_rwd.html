@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea-網站知識</title>
 </head>
@@ -33,59 +40,70 @@
     </div>
     <div class="knowledge-banner banner">
         <div class="banner-text wrapper">
-            <h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
                 網站知識<br>website knowledge
             </h2>
         </div>
     </div>
-    <div class="knowledge-introduce wrapper">
-        <h2>RWD是什麼?</h2>
-        <img src="./img/knowledge/rwd.jpg" alt="RWD是什麼?">
-        <p>回應式網頁設計（英語：Responsive Web Design，通常縮寫為RWD），或稱自適應網頁設計、響應式網頁設計、對應式網頁設計。 是一種網頁設計的技術，這種設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。<br></br>
-            此概念於2010年5月由國外著名網頁設計師Ethan Marcotte所提出。<br></br>
+    <div class="overflow">
+        <div class="knowledge-introduce wrapper" data-aos="fade-up" data-aos-duration="2000">
+            <h2>RWD是什麼?</h2>
+            <img src="./img/knowledge/rwd.jpg" alt="RWD是什麼?">
+            <p>回應式網頁設計（英語：Responsive Web Design，通常縮寫為RWD），或稱自適應網頁設計、響應式網頁設計、對應式網頁設計。
+                是一種網頁設計的技術，這種設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。<br></br>
+                此概念於2010年5月由國外著名網頁設計師Ethan Marcotte所提出。<br></br>
 
-            採用 RWD 的網站使用CSS3 中的 Media queries，是針對 @media 查詢的延伸應用，藉由流體格線和回應式的圖片針對不同大小的裝置提供對應的樣式：<br></br>
+                採用 RWD 的網站使用CSS3 中的 Media queries，是針對 @media 查詢的延伸應用，藉由流體格線和回應式的圖片針對不同大小的裝置提供對應的樣式：<br></br>
 
-            流體格線概念要求頁面元素使用相對單位，如百分比或em調整大小，而不是絕對單位，如像素或點。<br> 回應式圖片應以相對單位調整大小（最大到 100%），防止它們顯示於它們的上層元素外。<br> Media queries允許頁面根據瀏覽裝置而使用不同 CSS 樣式規則，最常用的是瀏覽器的寬度。<br></br>
+                流體格線概念要求頁面元素使用相對單位，如百分比或em調整大小，而不是絕對單位，如像素或點。<br> 回應式圖片應以相對單位調整大小（最大到 100%），防止它們顯示於它們的上層元素外。<br> Media
+                queries允許頁面根據瀏覽裝置而使用不同 CSS 樣式規則，最常用的是瀏覽器的寬度。<br></br>
 
-            RWD變得更加重要，是因為行動裝置流量現在占網際網路流量的一半以上。因此，Google 宣布行動裝置時代的到來（Mobilegeddon）（2015年4月21日），如果搜尋行為是來自行動裝置，將會提高對行動裝置友善的網站排名</p>
-        <a href="knowledge.html" class="btn mt-60">回上一頁</a>
+                RWD變得更加重要，是因為行動裝置流量現在占網際網路流量的一半以上。因此，Google
+                宣布行動裝置時代的到來（Mobilegeddon）（2015年4月21日），如果搜尋行為是來自行動裝置，將會提高對行動裝置友善的網站排名</p>
+            <a href="knowledge.html" class="btn mt-60">回上一頁</a>
+        </div>
     </div>
     <!-- 表尾 -->
-    <div class="fotter ">
-        <div class="footer-wrapper flex-block-between mb-60 ">
-            <div class="footer-img ">
-                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+    <div class="overflow">
+        <div class="fotter " data-aos="fade-up" data-aos-duration="2000">
+            <div class="footer-wrapper flex-block-between mb-60 ">
+                <div class="footer-img ">
+                    <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-nav ">
+                    <ul class="menu ">
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol>
+                                <li class="menu-text "><a href="service.html ">服務項目</a></li>
+                                <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
+                                <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
+                                <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav ">
-                <ul class="menu ">
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol>
-                            <li class="menu-text "><a href="service.html ">服務項目</a></li>
-                            <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
-                            <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
-                            <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
-                    </li>
-                </ul>
+            <div class="copyright wrapper ">
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                        href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
-        </div>
-        <div class="copyright wrapper ">
-            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

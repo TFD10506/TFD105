@@ -5,17 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea點子設計</title>
+    <style>
+        .nav-index {
+            background: rgba(255, 255, 255, 0.6);
+        }
+    </style>
 </head>
 
 <body>
+    <!-- 載入畫面 -->
+    <div class="loading" id="loading">
+        <img class="loading-logo" src="./img/fotter.png" alt="logo">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- 導覽列 -->
-    <div class="nav">
+    <div class="nav-index" name="nav-index">
         <div class="nav-width">
             <h1><a class="logo" href="index.html">logo</a></h1>
             <ul class="menu">
@@ -40,10 +62,10 @@
         </video>
     </div>
     <!-- 內容 -->
-    <div class="index-content">
+    <div class="index-content overflow">
         <div class="three-block wrapper">
-            <h2 class="three-block-h2">為何要選擇我們?</h2>
-            <ul class="three-block-ul">
+            <h2 class="three-block-h2" data-aos="fade-down" data-aos-duration="1000">為何要選擇我們?</h2>
+            <ul class="three-block-ul" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <li class="three-block-li">
                     <div class="circle">
                         <img src="img/why_1.jpg" alt="有經驗的開發者">
@@ -68,8 +90,8 @@
             </ul>
         </div>
         <div class="three-block bg-white">
-            <h2 class="three-block-h2">服務項目</h2>
-            <ul class="three-block-ul wrapper">
+            <h2 class="three-block-h2" data-aos="fade-down" data-aos-duration="1000">服務項目</h2>
+            <ul class="three-block-ul wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <li class="three-block-li">
                     <img class="mb-24 br-25" src="img/one_page/one_page_1.jpg" alt="有經驗的開發者">
                     <h3 class="mb-24">一頁式網站</h3>
@@ -88,10 +110,12 @@
             </ul>
         </div>
         <div class="index-cooperate wrapper">
-            <h2 class="mb-60 mt-60">合作流程</h2>
+            <h2 class="mb-60 mt-60" data-aos="fade-down" data-aos-duration="1000">合作流程</h2>
             <div class="flex-block-between">
-                <div class="cooperate-img"><img src="img/cooperate_big.png" alt="合作流程大圖"></div>
-                <div class="cooperate-text ml-60">
+                <div class="cooperate-img" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
+                    <img src="img/cooperate_big.png" alt="合作流程大圖">
+                </div>
+                <div class="cooperate-text ml-60" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
                     <ul>
                         <li class="index-cooperate-li">
                             <img src="img/number/n_1.jpg" class="index-icon" alt="合作第一步驟">
@@ -112,44 +136,73 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="btn mb-60">立即詢價</a>
+            <a href="contact.html " class="button-jittery mb-60">立即詢價</a>
         </div>
     </div>
     <!-- 表尾 -->
-    <div class="fotter ">
-        <div class="footer-wrapper flex-block-between mb-60 ">
-            <div class="footer-img ">
-                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+    <div class="overflow">
+        <div class="fotter" data-aos="fade-up" data-aos-duration="2000">
+            <div class="footer-wrapper flex-block-between mb-60 ">
+                <div class="footer-img ">
+                    <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-nav ">
+                    <ul class="menu ">
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol>
+                                <li class="menu-text "><a href="service.html ">服務項目</a></li>
+                                <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
+                                <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
+                                <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav ">
-                <ul class="menu ">
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol>
-                            <li class="menu-text "><a href="service.html ">服務項目</a></li>
-                            <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
-                            <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
-                            <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
-                    </li>
-                </ul>
+            <div class="copyright wrapper ">
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                        href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
-        </div>
-        <div class="copyright wrapper ">
-            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
         </div>
     </div>
+    <script>
+        // 載入畫面
+        var $loading = $('#loading');
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                $loading.fadeOut(1000);
+            }, 1000);
+            setTimeout(function () {
+                document.getElementsByClassName("loading")[0].remove();
+            }, 2000);
+        });
+        AOS.init();
+        // 滾輪判斷
+        window.onscroll = function () {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var navBg = document.getElementsByClassName("nav-index")[0];
+            // console.log(scrollTop)
+            if (scrollTop >= 500) {
+                navBg.style.background = "rgba(255, 255, 255)";
+                // navBg.style.boxShadow = "none";
+            } else if (scrollTop < 500) {
+                navBg.style.background = "rgba(255, 255, 255, 0.6)";
+                // navBg.style.boxShadow = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

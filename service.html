@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea-服務項目</title>
 </head>
@@ -33,72 +40,83 @@
     </div>
     <div class="service-banner banner">
         <div class="banner-text wrapper">
-            <h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
                 服務項目<br>service items
             </h2>
         </div>
     </div>
-    <div class="wrapper mb-60 mt-60">
-        <div class="service flex flex-jcsb">
-            <img class="img-2pic" src="img/service_1.png" alt="一頁式網站">
-            <div class="service-text two-block-li">
-                <h3 class="pb-24 service-line">一頁式網站</h3>
-                <p class="mb-24 mt-24">一頁式網站為在單一網頁利用豐富色彩圖文、動態效果來呈現，瀏覽方式簡潔明瞭，使用者只要不斷向下滾動即可快速瀏覽網站內容，適合各類型客戶</p>
-                <a href="portfolios.html" class="btn">查看更多</a>
+    <div class="overflow">
+        <div class="wrapper mb-60 mt-60">
+            <div class="service flex flex-jcsb">
+                <img class="img-2pic" src="img/service_1.png" alt="一頁式網站" data-aos="fade-right"
+                    data-aos-duration="2000">
+                <div class="service-text two-block-li" data-aos="fade-left" data-aos-duration="2000">
+                    <h3 class="pb-24 service-line">一頁式網站</h3>
+                    <p class="mb-24 mt-24">一頁式網站為在單一網頁利用豐富色彩圖文、動態效果來呈現，瀏覽方式簡潔明瞭，使用者只要不斷向下滾動即可快速瀏覽網站內容，適合各類型客戶</p>
+                    <a href="portfolios.html" class="btn">查看更多</a>
+                </div>
             </div>
-        </div>
-        <div class="service flex flex-row-reverse">
-            <img class="img-2pic" src="img/service_2.png" alt="購物網站">
-            <div class="service-text two-block-li">
-                <h3 class="pb-24 service-line">購物網站</h3>
-                <p class="mb-24 mt-24">購物網站為多頁式網站，商品種類較為複雜，不同商品需顯示不同頁面，進行購買或加入購物車時串接金流，讓使用者在購買商品時可以快速結帳，適合線上電商類客戶</p>
-                <a href="portfolios.html" class="btn">查看更多</a>
+            <div class="service flex flex-row-reverse">
+                <img class="img-2pic" src="img/service_2.png" alt="購物網站" data-aos="fade-left" data-aos-duration="2000">
+                <div class="service-text two-block-li" data-aos="fade-right" data-aos-duration="2000">
+                    <h3 class="pb-24 service-line">購物網站</h3>
+                    <p class="mb-24 mt-24">購物網站為多頁式網站，商品種類較為複雜，不同商品需顯示不同頁面，進行購買或加入購物車時串接金流，讓使用者在購買商品時可以快速結帳，適合線上電商類客戶
+                    </p>
+                    <a href="portfolios.html" class="btn">查看更多</a>
+                </div>
             </div>
-        </div>
-        <div class="service flex">
-            <img class="img-2pic" src="img/service_3.png" alt="企業形象網站">
-            <div class="service-text two-block-li">
-                <h3 class="pb-24 service-line">企業形象網站</h3>
-                <p class="mb-24 mt-24">企業形象網站為多頁式網站，主要為介紹公司及公司產品或服務項目，為網路名片，讓使用者快速了解企業，適合公司或工作室類客戶</p>
-                <a href="portfolios.html" class="btn">查看更多</a>
+            <div class="service flex">
+                <img class="img-2pic" src="img/service_3.png" alt="企業形象網站" data-aos="fade-right"
+                    data-aos-duration="2000">
+                <div class="service-text two-block-li" data-aos="fade-left" data-aos-duration="2000">
+                    <h3 class="pb-24 service-line">企業形象網站</h3>
+                    <p class="mb-24 mt-24">企業形象網站為多頁式網站，主要為介紹公司及公司產品或服務項目，為網路名片，讓使用者快速了解企業，適合公司或工作室類客戶</p>
+                    <a href="portfolios.html" class="btn">查看更多</a>
+                </div>
             </div>
         </div>
     </div>
     <!-- 表尾 -->
-    <div class="fotter ">
-        <div class="footer-wrapper flex-block-between mb-60 ">
-            <div class="footer-img ">
-                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+    <div class="overflow">
+        <div class="fotter " data-aos="fade-up" data-aos-duration="2000">
+            <div class="footer-wrapper flex-block-between mb-60 ">
+                <div class="footer-img ">
+                    <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-nav ">
+                    <ul class="menu ">
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol>
+                                <li class="menu-text "><a href="service.html ">服務項目</a></li>
+                                <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
+                                <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
+                                <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav ">
-                <ul class="menu ">
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol>
-                            <li class="menu-text "><a href="service.html ">服務項目</a></li>
-                            <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
-                            <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
-                            <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
-                    </li>
-                </ul>
+            <div class="copyright wrapper ">
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                        href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
-        </div>
-        <div class="copyright wrapper ">
-            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

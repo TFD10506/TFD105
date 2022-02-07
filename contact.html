@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
+    <!-- 彈跳視窗 -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>idea-聯絡我們</title>
 </head>
@@ -35,118 +42,123 @@
     </div>
     <div class="contact-banner banner">
         <div class="banner-text wrapper">
-            <h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
                 聯絡我們<br>contact us
             </h2>
         </div>
     </div>
-    <div class="contact-content flex-column wrapper mt-60">
-        <h3 class="mb-24">選擇你要的網站類型，開始建立自己的網站!</h3>
-        <p class="mb-24">建立網站前有任何疑問嗎?歡迎聯絡我們詢問!</p>
-        <ul class="contact-form">
-            <li class="contact-form-li">
-                <h4>姓名(*)</h4>
-                <input class="name required" type="text" placeholder="姓名" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='姓名'">
-            </li>
-            <!-- 姓別 -->
-            <li class="contact-form-li contact-gender required">
-                <h4>姓別(*)</h4>
-                <input class="male" type="radio" name="one" />
-                <span>先生</span>
-                <input class="female" type="radio" name="one" />
-                <span>小姐</span>
-            </li>
-            <li class="contact-form-li">
-                <h4>email(*)</h4>
-                <input class="name required" type="text" placeholder="email" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='email'">
-            </li>
-            <li class="contact-form-li">
-                <h4>連絡電話(*)</h4>
-                <input class="name required" type="text" placeholder="連絡電話" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='連絡電話'">
-            </li>
-            <li class="contact-form-li">
-                <h4>詢問的網站類型</h4>
-                <div class="type">
-                    <select class="select">
-                        <option value="1">詢問的網站類型</option>
-                        <option value="2">一頁式網站</option>
-                        <option value="3">購物網站</option>
-                        <option value="4">企業形象網站</option>
-                    </select>
-                </div>
-            </li>
-            <li class="contact-form-li">
-                <h4>選擇方案</h4>
-                <div class="type">
-                    <select class="select">
-                        <option value="1">選擇方案</option>
-                        <option value="2">基本方案</option>
-                        <option value="3">進階方案</option>
-                        <option value="4">客制方案</option>
-                    </select>
-                </div>
-            </li>
-            <li class="contact-form-li contact-long">
-                <h4>地址(地區/縣市)</h4>
-                <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='地址'">
-            </li>
-            <li class="contact-form-li contact-long">
-                <h4>預算</h4>
-                <div class="type">
-                    <select class="select">
-                        <option value="1">預算</option>
-                        <option value="2">1萬~5萬</option>
-                        <option value="3">5萬~10萬</option>
-                        <option value="4">10萬以上</option>
-                    </select>
-                </div>
-            </li>
-            <li class="contact-form-li contact-long">
-                <h4>網站需求/其他訊息(*)</h4>
-                <textarea class="contact-textarea" id="contact-textarea" cols="30" rows="10"></textarea>
-            </li>
-            <li>
-                <button id="submit" class="submit btn mt-24 mb-60">送　出</button>
-            </li>
-        </ul>
+    <div class="overflow">
+        <div class="contact-content flex-column wrapper mt-60" data-aos="fade-up" data-aos-duration="2000">
+            <h3 class="mb-24">選擇你要的網站類型，開始建立自己的網站!</h3>
+            <p class="mb-24">建立網站前有任何疑問嗎?歡迎聯絡我們詢問!</p>
+            <ul class="contact-form">
+                <li class="contact-form-li">
+                    <h4>姓名(*)</h4>
+                    <input class="name required" type="text" placeholder="姓名" onfocus="this.placeholder=''"
+                        onblur="this.placeholder='姓名'">
+                </li>
+                <!-- 姓別 -->
+                <li class="contact-form-li contact-gender required">
+                    <h4>姓別(*)</h4>
+                    <input class="male" type="radio" name="one" />
+                    <span>先生</span>
+                    <input class="female" type="radio" name="one" />
+                    <span>小姐</span>
+                </li>
+                <li class="contact-form-li">
+                    <h4>email(*)</h4>
+                    <input class="name required" type="text" placeholder="email" onfocus="this.placeholder=''"
+                        onblur="this.placeholder='email'">
+                </li>
+                <li class="contact-form-li">
+                    <h4>連絡電話(*)</h4>
+                    <input class="name required" type="text" placeholder="連絡電話" onfocus="this.placeholder=''"
+                        onblur="this.placeholder='連絡電話'">
+                </li>
+                <li class="contact-form-li">
+                    <h4>詢問的網站類型</h4>
+                    <div class="type">
+                        <select class="select">
+                            <option value="1">詢問的網站類型</option>
+                            <option value="2">一頁式網站</option>
+                            <option value="3">購物網站</option>
+                            <option value="4">企業形象網站</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="contact-form-li">
+                    <h4>選擇方案</h4>
+                    <div class="type">
+                        <select class="select">
+                            <option value="1">選擇方案</option>
+                            <option value="2">基本方案</option>
+                            <option value="3">進階方案</option>
+                            <option value="4">客制方案</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="contact-form-li contact-long">
+                    <h4>地址(地區/縣市)</h4>
+                    <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
+                        onblur="this.placeholder='地址'">
+                </li>
+                <li class="contact-form-li contact-long">
+                    <h4>預算</h4>
+                    <div class="type">
+                        <select class="select">
+                            <option value="1">預算</option>
+                            <option value="2">1萬~5萬</option>
+                            <option value="3">5萬~10萬</option>
+                            <option value="4">10萬以上</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="contact-form-li contact-long">
+                    <h4>網站需求/其他訊息(*)</h4>
+                    <textarea class="contact-textarea" id="contact-textarea" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <button id="submit" class="submit btn mt-24 mb-60">送　出</button>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- 表尾 -->
-    <div class="fotter ">
-        <div class="footer-wrapper flex-block-between mb-60 ">
-            <div class="footer-img ">
-                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+    <div class="overflow">
+        <div class="fotter " data-aos="fade-up" data-aos-duration="2000">
+            <div class="footer-wrapper flex-block-between mb-60 ">
+                <div class="footer-img ">
+                    <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-nav ">
+                    <ul class="menu ">
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol>
+                                <li class="menu-text "><a href="service.html ">服務項目</a></li>
+                                <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
+                                <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
+                                <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav ">
-                <ul class="menu ">
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol>
-                            <li class="menu-text "><a href="service.html ">服務項目</a></li>
-                            <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
-                            <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
-                            <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
-                    </li>
-                </ul>
+            <div class="copyright wrapper ">
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                        href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
-        </div>
-        <div class="copyright wrapper ">
-            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
         </div>
     </div>
     <script>
@@ -160,6 +172,7 @@
                 swal("送出失敗，必填欄位未輸入", "此為學習、展示之用，無法幫忙製作網頁", "error");
             }
         });
+        AOS.init();
     </script>
 </body>
 

@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
     <!-- 黑體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea-版型參考</title>
 </head>
@@ -33,67 +40,77 @@
     </div>
     <div class="version-banner banner">
         <div class="banner-text wrapper">
-            <h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
                 版型參考<br>version reference
             </h2>
         </div>
     </div>
-    <!-- 頁籤HTML -->
-    <span class="version-span" id="version-tab-1">一頁式網站</span>
-    <span class="version-span" id="version-tab-2">購物網站</span>
-    <span class="version-span" id="version-tab-3">企業形象網站</span>
-    <!-- 頁籤按鈕 -->
-    <div id="version-tab">
-        <ul>
-            <li><a href="#version-tab-1">一頁式網站</a></li>
-            <li><a href="#version-tab-2">購物網站</a></li>
-            <li><a href="#version-tab-3">企業形象網站</a></li>
-        </ul>
-        <div class="version-tab-content-1">
-            <img src="./img/version/version_onePage.jpg" class="version-img" alt="一頁式網站">
-        </div>
-        <div class="version-tab-content-2">
-            <img src="./img/version/version_buyPage.jpg" class="version-img" alt="購物網站">
-        </div>
-        <div class="version-tab-content-3">
-            <img src="./img/version/version_companyPage.jpg" class="version-img" alt="企業形象網站">
+    <div class="overflow">
+        <div class="version-content" data-aos="fade-up" data-aos-duration="1000">
+            <!-- 頁籤HTML -->
+            <span class="version-span" id="version-tab-1">一頁式網站</span>
+            <span class="version-span" id="version-tab-2">購物網站</span>
+            <span class="version-span" id="version-tab-3">企業形象網站</span>
+            <!-- 頁籤按鈕 -->
+            <div id="version-tab">
+                <ul>
+                    <li><a href="#version-tab-1">一頁式網站</a></li>
+                    <li><a href="#version-tab-2">購物網站</a></li>
+                    <li><a href="#version-tab-3">企業形象網站</a></li>
+                </ul>
+                <div class="version-tab-content-1">
+                    <img src="./img/version/version_onePage.jpg" class="version-img" alt="一頁式網站">
+                </div>
+                <div class="version-tab-content-2">
+                    <img src="./img/version/version_buyPage.jpg" class="version-img" alt="購物網站">
+                </div>
+                <div class="version-tab-content-3">
+                    <img src="./img/version/version_companyPage.jpg" class="version-img" alt="企業形象網站">
+                </div>
+            </div>
         </div>
     </div>
     <!-- 表尾 -->
-    <div class="fotter ">
-        <div class="footer-wrapper flex-block-between mb-60 ">
-            <div class="footer-img ">
-                <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
-                <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+    <div class="overflow">
+        <div class="fotter " data-aos="fade-up" data-aos-duration="2000">
+            <div class="footer-wrapper flex-block-between mb-60 ">
+                <div class="footer-img ">
+                    <a href="index.html"><img class="fotter-logo " src="./img/logo_idea_fotter.svg " alt="logo "></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fas fa-envelope-square"></i></a>
+                    <a href="#" class="flex-grow-1 fotter-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-nav ">
+                    <ul class="menu ">
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol>
+                                <li class="menu-text "><a href="service.html ">服務項目</a></li>
+                                <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
+                                <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
+                                <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
+                        </li>
+                        <li class="menu_li ">
+                            <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nav ">
-                <ul class="menu ">
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="about.html ">關於我們</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol>
-                            <li class="menu-text "><a href="service.html ">服務項目</a></li>
-                            <li class="fotter-submenu-text "><a href="programme.html ">方案介紹</a></li>
-                            <li class="fotter-submenu-text "><a href="version.html ">版型參考</a></li>
-                            <li class="fotter-submenu-text "><a href="knowledge.html ">網站知識</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="portfolios.html ">網站作品</a></ol>
-                    </li>
-                    <li class="menu_li ">
-                        <ol class="menu-text "><a href="contact.html ">聯絡我們</a></ol>
-                    </li>
-                </ul>
+            <div class="copyright wrapper ">
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                        href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
-        </div>
-        <div class="copyright wrapper ">
-            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
