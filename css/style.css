@@ -328,13 +328,13 @@ p {
 }
 
 .fotter {
-    /* background-image: url("../img/fotter_1.jpg"); */
-    /* background-size: cover; */
-    /* background-repeat:repeat;
-    background-position: top top; */
-    background-color: #00A8B8;
+    background-image: url("../img/fotter/fotter.jpg");
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: top top;
+    /* background-color: #00A8B8; */
     color: white;
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 60px;
 }
 
