@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #F4F2EF;
+    /* background-color: #F4F2EF; */
+    background-color: #F5F5F5;
     font-family: "Noto Sans TC", "Noto Sans", "Microsoft JhengHei", "微軟正黑體", "DINAlternate", "STHeitiTC-Light", "Microsoft YaHei", "微软雅黑", "新細明體", Arial, sans-serif;
 }
 .overflow{
@@ -447,6 +448,15 @@ p {
 .fotter-submenu-text {
     font-size: 16px;
     line-height: 36px;
+}
+.color-main{
+    color: #00A8B8;
+}
+.color-main2{
+    color: #F1C30F;
+}
+.color-main3{
+    color: #E4007F;
 }
 /* 動畫 */
 .scale-up-ver-top {

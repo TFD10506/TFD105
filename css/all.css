@@ -231,14 +231,42 @@
 }
 
 .programme {
-    background-image: url('../img/bg/programme_bg_1.jpg');
+    /* background-image: url('../img/bg/programme_bg_1.jpg'); */
+    background-color: #fff;
+    border-radius: 5px;
     width: 300px;
     height: 400px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
 }
-
-.programme h2 {
+.programme-basic-button,
+.programme-advanced-button,
+.programme-premium-button{
+    border: 1px solid white;
+}
+.programme-basic:hover ,
+.programme-basic:hover .color-main,
+.programme-basic-button{
+    background-color: #00A8B8;
+    color: white;
+}
+.programme-advanced:hover ,
+.programme-advanced:hover .color-main2,
+.programme-advanced:hover .programme-advanced-button,
+.programme-advanced-button{
+    background-color: #F1C30F;
+    color: white;
+}
+.programme-premium:hover ,
+.programme-premium:hover .color-main3,
+.programme-premium:hover .programme-premium-button,
+.programme-premium-button{
+    background-color: #E4007F;
+    color: white;
+}
+/* 改成標題換色 */
+/* .programme h2 {
     color: #E4007F;
-}
+} */
 
 .programme p {
     height: 150px;
