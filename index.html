@@ -19,9 +19,10 @@
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea點子設計</title>
     <style>
-        .nav-index {
-            background: rgba(255, 255, 255, 0.6);
-        }
+        /* 取消 */
+        /* .nav-index {
+            background: rgba(255, 255, 255, 0.9);
+        } */
     </style>
 </head>
 
@@ -37,7 +38,7 @@
         </div>
     </div>
     <!-- 導覽列 -->
-    <div class="nav-index" name="nav-index">
+    <div class="nav" name="nav-index">
         <div class="nav-width">
             <h1><a class="logo" href="index.html">logo</a></h1>
             <ul class="menu">
@@ -55,16 +56,19 @@
         </div>
     </div>
     <!-- banner -->
-    <div class="index-banner">
-        <video class="index-banner-video" playsinline autoplay muted loop>
-            <source src="./img/banner/index_banner.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="index-banner-wrapper">
+        <div class="index-banner">
+            <video class="index-banner-video" playsinline autoplay muted loop>
+                <source src="./img/banner/index_banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
     <!-- 內容 -->
     <div class="index-content overflow">
+        <!-- 為何要選擇我們? -->
         <div class="three-block wrapper">
-            <h2 class="three-block-h2" data-aos="fade-down" data-aos-duration="1000">為何要選擇我們?</h2>
+            <h2 class="three-block-h2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">為何要選擇我們?</h2>
             <ul class="three-block-ul" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <li class="three-block-li">
                     <div class="circle">
@@ -89,33 +93,35 @@
                 </li>
             </ul>
         </div>
+        <!-- 服務項目 -->
         <div class="three-block bg-white">
-            <h2 class="three-block-h2" data-aos="fade-down" data-aos-duration="1000">服務項目</h2>
+            <h2 class="three-block-h2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">服務項目</h2>
             <ul class="three-block-ul wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <li class="three-block-li">
-                    <img class="mb-24 br-25" src="img/one_page/one_page_1.jpg" alt="有經驗的開發者">
+                    <img class="mb-24" src="./img/portfolios/onepage/onepage_1.JPG " alt="一頁式網站">
                     <h3 class="mb-24">一頁式網站</h3>
                     <a href="portfolios.html" class="btn">查看更多</a>
                 </li>
                 <li class="three-block-li">
-                    <img class="mb-24 br-25" src="img/shop_page/shop_1.jpg" alt="多方面的合作經驗">
+                    <img class="mb-24" src="./img/portfolios/shop/shop_1.JPG " alt="購物網站">
                     <h3 class="mb-24">購物網站</h3>
                     <a href="portfolios.html" class="btn">查看更多</a>
                 </li>
                 <li class="three-block-li">
-                    <img class="mb-24 br-25" src="img/company_page/company_1.jpg" alt="有保證的售後服務">
+                    <img class="mb-24" src="./img/portfolios/company/company_1.JPG " alt="企業形象網站">
                     <h3 class="mb-24">企業形象網站</h3>
                     <a href="portfolios.html" class="btn">查看更多</a>
                 </li>
             </ul>
         </div>
+        <!-- 合作流程 -->
         <div class="index-cooperate wrapper">
-            <h2 class="mb-60 mt-60" data-aos="fade-down" data-aos-duration="1000">合作流程</h2>
+            <h2 class="mb-60 mt-60" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">合作流程</h2>
             <div class="flex-block-between">
                 <div class="cooperate-img" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
                     <img src="img/cooperate_big.png" alt="合作流程大圖">
                 </div>
-                <div class="cooperate-text ml-60" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
+                <div class="cooperate-text ml-60" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
                     <ul>
                         <li class="index-cooperate-li">
                             <img src="img/number/n_1.jpg" class="index-icon" alt="合作第一步驟">
@@ -189,19 +195,19 @@
             }, 2000);
         });
         AOS.init();
-        // 滾輪判斷
-        window.onscroll = function () {
-            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            var navBg = document.getElementsByClassName("nav-index")[0];
-            // console.log(scrollTop)
-            if (scrollTop >= 500) {
-                navBg.style.background = "rgba(255, 255, 255)";
-                // navBg.style.boxShadow = "none";
-            } else if (scrollTop < 500) {
-                navBg.style.background = "rgba(255, 255, 255, 0.6)";
-                // navBg.style.boxShadow = "none";
-            }
-        }
+        // 滾輪判斷取消
+        // window.onscroll = function () {
+        //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        //     var navBg = document.getElementsByClassName("nav-index")[0];
+        //     // console.log(scrollTop)
+        //     if (scrollTop >= 500) {
+        //         navBg.style.background = "rgba(255, 255, 255)";
+        //         // navBg.style.boxShadow = "none";
+        //     } else if (scrollTop < 500) {
+        //         navBg.style.background = "rgba(255, 255, 255, 0.9)";
+        //         // navBg.style.boxShadow = "none";
+        //     }
+        // }
     </script>
 </body>
 
