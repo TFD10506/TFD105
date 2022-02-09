@@ -59,7 +59,7 @@
     height: calc(100vh - 90px);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right bottom;
     position: relative;
 }
 
@@ -95,31 +95,31 @@
 }
 
 .about-banner {
-    background-image: url(../img/banner/about_banner.jpg);
+    background-image: url(../img/banner/about_banner.png);
 }
 
 .service-banner {
-    background-image: url(../img/banner/service_banner.jpg);
+    background-image: url(../img/banner/service_banner.png);
 }
 
 .programme-banner {
-    background-image: url(../img/banner/programme_banner.jpg);
+    background-image: url(../img/banner/programme_banner.png);
 }
 
 .version-banner {
-    background-image: url(../img/banner/version_banner.jpg);
+    background-image: url(../img/banner/version_banner.png);
 }
 
 .knowledge-banner {
-    background-image: url(../img/banner/knowledge_banner.jpg);
+    background-image: url(../img/banner/knowledge_banner.png);
 }
 
 .portfolios-banner {
-    background-image: url(../img/banner/portfolios_banner.jpg);
+    background-image: url(../img/banner/portfolios_banner.png);
 }
 
 .contact-banner {
-    background-image: url(../img/banner/contact_banner.jpg);
+    background-image: url(../img/banner/contact_banner.png);
 }
 
 .index-content h2 {
@@ -176,32 +176,34 @@
 }
 
 .about-content-img div {
-    background-position: center center;
+    margin: 10px 0;
+    background-position: top center;
+    border-radius: 5px;
     background-size: cover;
     transition: .5s;
 }
 
 .about-content-img div:hover {
-    flex-grow: 5;
-    opacity: 1;
+    flex-grow: 3;
+    /* opacity: 1; */
 }
 
 .about-img-1 {
     background-image: url('../img/about_us_1.jpg');
     flex-grow: 1;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .about-img-2 {
     background-image: url('../img/about_us_2.jpg');
     flex-grow: 1;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .about-img-3 {
     background-image: url('../img/about_us_3.jpg');
     flex-grow: 1;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .about-content-text {
@@ -308,7 +310,9 @@
     border-radius: 15px 15px 0 0;
 }
 
-
+.version-tab-content{
+    border-radius: 15px;
+}
 /*頁籤div內容*/
 
 #version-tab>div {
@@ -423,9 +427,9 @@
     background: #FFFFFF;
     border: 1px solid #00A8B8;
     border-radius: 30px;
-    /* height: 60px; */
+    height: 60px;
     width: 150px;
-    padding:14px;
+    line-height: 56px;
     font-size: 18px;
     text-align: center;
     color: #00A8B8;
@@ -442,12 +446,6 @@
     position: absolute;
     right: 19px;
     top: calc(50% - 6px );
-}
-
-.btn-more:hover {
-    background: #00A8B8;
-    font-weight: 400;
-    color: #FFFFFF;
 }
 
 .btn-more:hover:after {
@@ -481,7 +479,7 @@
 }
 
 .portfolios-text {
-    width: 66%;
+    /* width: 66%; */
 }
 
 .owl-theme .item {
@@ -621,6 +619,7 @@
     padding: 12px;
     /* border-radius: 26px; */
     border: 1px solid #333;
+    resize: none;
 }
 
 .submit:hover {

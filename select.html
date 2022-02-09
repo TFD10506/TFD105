@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://www.aluxediamond.com/css/master.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    /* 主要 */
+
+    .selectList .option:hover~.hoverBox {
+        transform: translateX(0);
+        opacity: 1;
+        /* pointer-events: auto; */
+    }
+
+    .selectList .option:hover {
+        color: #fff;
+        background-color: #df7475;
+    }
+
+    .formList select {
+        display: none;
+    }
+
+    .formList select {
+        width: 100%;
+        height: 40px;
+        border: none;
+        padding: 10px;
+        background-image: url(../images/arrowDown.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: "";
+        color: #888;
+        font-size: 16px;
+    }
+
+    .formList .item.select .right {
+        width: 100%;
+        height: 40px;
+    }
+
+    .formList .left,
+    .formList .right {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        color: #888;
+    }
+
+    .formBox .wrapBox {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #fafafa;
+    }
+
+    .formBox form {
+        width: 100%;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formList>li {
+        width: 50%;
+        margin-bottom: 18px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .formList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    .formList>li.full {
+        width: 100%;
+    }
+
+    .formList .item.select {
+        position: relative;
+        height: 100%;
+    }
+
+    .formList .item.column {
+        flex-direction: column;
+    }
+
+    .formList .item {
+        display: flex;
+        border: 1px solid #e5e5e5;
+        background-color: #fff;
+    }
+
+    .formList .selectTitle {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        background-image: url(../images/arrowDown.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        cursor: pointer;
+    }
+
+    .selectList {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 10;
+        width: 100%;
+        border: 1px solid #d3dbdf;
+        background-color: #f2f2f2;
+        transform: translateY(12px) scale(1.01);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.6s;
+    }
+
+    .selectList.show {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .selectList li {
+        position: relative;
+    }
+
+    .selectList .option {
+        padding: 12px;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .selectList .hoverBox {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: 20px;
+        transform: translateX(15px);
+        width: 245px;
+        padding: 20px 30px;
+        background-color: #df7475;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        color: #fff;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+    }
+
+    .selectList .hoverBox::before {
+        content: "";
+        position: absolute;
+        left: -18px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 18px 18px 0;
+        border-color: transparent #df7475 transparent transparent;
+    }
+
+    .selectList .hoverBox .title {
+        padding-bottom: 5px;
+    }
+
+    .formList .item.select .left {
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+        display: none;
+    }
+
+    .formList .item.column .left {
+        width: 100%;
+        height: 40px;
+    }
+
+    .formList .left,
+    .formList .right {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        color: #888;
+    }
+</style>
+
+<body>
+    <div class="formBox ">
+        <!--formBox-->
+        <div class="wrapBox">
+            <!--wrapBox-->
+            <form method="post" name="service_form" id="service_form">
+
+                <div class="formListBox">
+                    <!--formListBox-->
+                    <ul class="formList reservationForm">
+                        <li class="full">
+                            <div class="item column select">
+                                <!--item-->
+                                <!-- <div class="left"><em>*</em>預約來店門市111</div> -->
+                                <div class="right">
+                                    <div class="selectBox">
+                                        <div class="selectTitle"><em>*</em>預約來店門市222</div>
+                                        <ul class="selectList location" data-id="data_store">
+                                            <li data-id="10" data-view-store="1" data-view-online="0" data-golden="0"
+                                                data-minday="1" data-ruleoutday="">
+                                                <div class="option">台北忠孝大安門市</div>
+                                                <div class="hoverBox">
+                                                    <div class="title">門市地址:</div>
+                                                    <div class="text">台北市大安區大安路一段106巷2號</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <select class="location require" name="data_store" id="data_store">
+                                            <option selected value="">*預約來店門市3333</option>
+                                            <option value="台北忠孝大安門市" data-view-store="1" data-view-online="0"
+                                                data-golden="0" data-minday="1" data-ruleoutday="">台北忠孝大安門市</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item end-->
+                        </li>
+                        <!--checkArea end-->
+                    </ul>
+                </div>
+                <!--formListBox end-->
+            </form>
+        </div>
+        <!--wrapBox end-->
+    </div>
+    <!--formBox end-->
+
+    <script>
+
+        $(function () {
+            // 下拉選單點選
+            $('.selectTitle').click(function () {
+                $(this).parents('.selectBox').find('.selectList').toggleClass('show');
+            });
+            // 下拉表單內容點選
+            $('.selectList li').click(function () {
+                let $this = $(this);
+                let text = $this.find('.option').text();
+                let obj = $this.closest('ul').data('id');
+                $this.closest('.selectBox').find('.selectTitle').text(text);
+                $this.closest('.selectList').removeClass('show');
+                $('#' + obj).val(text);
+            });
+        })
+
+    </script>
+</body>
+
+</html>
