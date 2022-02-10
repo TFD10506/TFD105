@@ -1,45 +1,97 @@
-@media screen and (max-width: 767.98px){
+@media screen and (max-width: 1200px){
+        .flex-block-between {
+            justify-content: center;
+        }
+        .service-text{
+            width: 40%;
+            padding: 0;
+            /* margin-left: 40px; */
+            margin-bottom: 24px;
+        }
+        .service-item{
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .service-line{
+            width: 100%;
+        }
+    }
+@media screen and (max-width: 768px){
     .menu{
         display: none;
     }
     .three-block-li,.flex-block-between{
         width: 60%;
     }
+    .cooperate-img,
+    .cooperate-text{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-img{
+        width:80%;
+        /* margin-bottom: 60px; */
+    }
+    .footer-img a{
+        margin-left: 12px;
+    }
+    .footer-img i{
+        font-size: 36px;
+    }
     .fotter{
         background-size: content;
         background-position: top center;
     }
     .footer-wrapper{
-        width: 80%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
     .fotter-menu{
-        display: block;
+        display: flex;
+        margin-bottom: 24px;
     }
-    .footer-img{
-        width: 30%;
+    .menu_li a{
+        font-size: 20px;
     }
-    .footer-nav{
+    .fotter-submenu-text a{
+        font-size: 18px;
+    }
+    .flex-block-between {
+        justify-content: center;
+    }
+    .programme{
+        height: 300px;
+    }
+    .programme p{
+        height: 100px;
+    }
+    .service-text{
         width: 40%;
+        padding: 0;
+        margin-left: 40px;
     }
-    .footer-nav{
-        text-align-last: left;
+    .service-item{
+        flex-wrap: wrap;
     }
-    .fotter-menu-li{
-        display: flex;
+    .img-2pic{
+        width: 80%;
+        margin-bottom: 24px;
     }
-    .footer-i-icon{
-        display: block;
-        margin-left: 10px;
-        text-align: center;
+    .service-text{
+        width: 80%;
     }
-    .footer-rwd-li{
-        display: flex;
-        align-items: center;
-    }
-    .fotter-rwd-submenu{
-        display: none;
+    .service li:nth-child(even) .service-text{
+        order: 0;
     }
 }
 @media screen and (max-width: 575.98px){
+    .footer-img{
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
     
 }

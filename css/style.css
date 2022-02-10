@@ -434,7 +434,7 @@ p {
 }
 
 .footer-wrapper {
-    max-width: 800px;
+    width: 800px;
     margin: 30px auto 60px;
 }
 
@@ -477,6 +477,8 @@ p {
 }
 .copyright p {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .footer-nav a:hover {
