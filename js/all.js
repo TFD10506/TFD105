@@ -2,11 +2,11 @@
 var $loading = $('#loading');
 window.addEventListener("load", function () {
     setTimeout(function () {
-        $loading.fadeOut(1000);
-    }, 1000);
+        $loading.fadeOut(500);
+    }, 500);
     setTimeout(function () {
         document.getElementsByClassName("loading")[0].remove();
-    }, 2000);
+    }, 1000);
 });
 //有時間再改掉
 AOS.init();

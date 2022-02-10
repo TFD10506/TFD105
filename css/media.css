@@ -16,6 +16,13 @@
         .service-line{
             width: 100%;
         }
+        .banner {
+            background-position: left bottom;
+        }
+        .banner-text{
+            top: 60%;
+            left: 30%;
+        }
     }
 @media screen and (max-width: 768px){
     .menu{
@@ -30,11 +37,15 @@
         margin: 0 auto;
     }
     .footer-img{
-        width:80%;
+        width:70%;
         /* margin-bottom: 60px; */
     }
     .footer-img a{
-        margin-left: 12px;
+        margin-left: 6px;
+    }
+    .fotter-logo{
+        width: 70%;
+        margin-left: 20%;
     }
     .footer-img i{
         font-size: 36px;
@@ -62,6 +73,10 @@
     }
     .flex-block-between {
         justify-content: center;
+    }
+    .banner-text{
+        top: 50%;
+        left: 30%;
     }
     .programme{
         height: 300px;
