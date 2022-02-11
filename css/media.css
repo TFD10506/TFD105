@@ -48,11 +48,28 @@
         max-width: 60%;
         margin-bottom: 30px;
     }
+    .nav-width{
+        max-width: 100%;
+        justify-content: center;
+    }
     .menu{
         display: none;
     }
     .three-block-li,.flex-block-between{
         width: 80%;
+    }
+    .index-content h2::before {
+        content: "";
+        border-bottom: 1px solid #333;
+        width: 50px;
+        margin: auto 40px auto 0;
+    }
+    
+    .index-content h2::after {
+        content: "";
+        border-bottom: 1px solid #333;
+        width: 50px;
+        margin: auto 0 auto 40px;
     }
     .index-cooperate-li {
         flex-direction: column;
