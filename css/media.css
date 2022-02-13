@@ -59,6 +59,36 @@
             overflow: hidden;
         }
     }
+@media screen and (max-width: 960px){
+    
+    .contact-form{
+        width: 100%;
+    }
+    .contact-form-li{
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-form-li input{
+        margin-right: 10px;
+    }
+    .contact-gender{
+        justify-content: flex-start;
+    }
+    .contact-gender input{
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .type{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .type-short::after{
+        right: 3%;
+    }
+    .submit{
+        margin: 30px auto;
+    }
+}
 @media screen and (max-width: 768px){
     h2 {
         font-size: 22px;
@@ -112,10 +142,12 @@
     .index-icon-text{
         padding: 5% 10%;
     }
-    .cooperate-img,
-    .cooperate-text{
+    .cooperate-img{
         width: 100%;
         margin: 0px auto 60px auto;
+    }
+    .cooperate-text{
+        margin: 0px auto;
     }
     .knowledge{
         display: flex;
@@ -144,14 +176,16 @@
         overflow: hidden;
     }
     .portfolios-list{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+        margin-bottom: 30px;
     }
     .portfolios-text {
         width: 85%;
+        text-align: center;
     }
     .footer-img{
         width:70%;
@@ -195,15 +229,43 @@
     }
     .flex-block-between {
         justify-content: center;
+        margin-bottom: 30px;
     }
     .banner {
-        background-position: left bottom;
+        /* background-position: right top; */
         height: calc(50vh - 60px);
+    }
+    .about-banner {
+        background-image: url(../img/banner/about_banner_m.png);
+    }
+    
+    .service-banner {
+        background-image: url(../img/banner/service_banner_m.png);
+    }
+    
+    .programme-banner {
+        background-image: url(../img/banner/programme_banner_m.png);
+    }
+    
+    .version-banner {
+        background-image: url(../img/banner/version_banner_m.png);
+    }
+    
+    .knowledge-banner {
+        background-image: url(../img/banner/knowledge_banner_m.png);
+    }
+    
+    .portfolios-banner {
+        background-image: url(../img/banner/portfolios_banner_m.png);
+    }
+    
+    .contact-banner {
+        background-image: url(../img/banner/contact_banner_m.png);
     }
 
     .banner-text{
-        top: 50%;
-        left: 30%;
+        top: 80%;
+        left: 10%;
     }
     .index-banner-wrapper{
     width: calc(100vw);
@@ -230,6 +292,7 @@
     .service li:nth-child(even) .service-text{
         order: 0;
     }
+    
 }
 @media screen and (max-width: 575.98px){
     .footer-img{

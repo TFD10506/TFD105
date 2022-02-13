@@ -97,31 +97,31 @@
 }
 
 .about-banner {
-    background-image: url(../img/banner/about_banner.png);
+    background-image: url(../img/banner/about_banner_b.png);
 }
 
 .service-banner {
-    background-image: url(../img/banner/service_banner.png);
+    background-image: url(../img/banner/service_banner_b.png);
 }
 
 .programme-banner {
-    background-image: url(../img/banner/programme_banner.png);
+    background-image: url(../img/banner/programme_banner_b.png);
 }
 
 .version-banner {
-    background-image: url(../img/banner/version_banner.png);
+    background-image: url(../img/banner/version_banner_b.png);
 }
 
 .knowledge-banner {
-    background-image: url(../img/banner/knowledge_banner.png);
+    background-image: url(../img/banner/knowledge_banner_b.png);
 }
 
 .portfolios-banner {
-    background-image: url(../img/banner/portfolios_banner.png);
+    background-image: url(../img/banner/portfolios_banner_b.png);
 }
 
 .contact-banner {
-    background-image: url(../img/banner/contact_banner.png);
+    background-image: url(../img/banner/contact_banner_b.png);
 }
 
 .index-content h2 {
@@ -513,11 +513,11 @@
     margin-bottom: 60px;
 }
 .portfolios-list{
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 .portfolios-line {
     display: block;
@@ -526,8 +526,8 @@
 }
 
 .portfolios-text {
-    text-align: left;
-    width: 66%;
+    text-align: center;
+    /* width: 66%; */
     line-height: 1.8;
     letter-spacing: 2;
 }
@@ -555,14 +555,14 @@
 
 .contact-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 800px;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .contact-form-li {
-    width: 50%;
+    width: calc(50% - 20px);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -578,7 +578,7 @@
     font-size: 16px;
     width: 100%;
     padding: 0 10px;
-    margin: 5px 80px 5px 10px;
+    margin: 5px 0px 5px 10px;
     /* border-radius: 26px; */
     border: 1px solid #333;
 }
@@ -600,8 +600,9 @@
     position: relative;
     display: block;
     height: 50px;
-    width: 50%;
-    margin: 10px;
+    width: 100%;
+    /* margin: 10px; */
+    margin-left: 10px;
 }
 
 .type::after {
@@ -619,28 +620,6 @@
     background-position: 100% 50%, 0 0; 
 
 }
-.type-short{
-    position: relative;
-    display: block;
-    height: 50px;
-    width: 50%;
-    margin: 10px;
-}
-.type-short::after {
-    content: "";
-    padding: 5px;
-    position: absolute;
-    right: 53%;
-    top: -10%;
-    z-index: 1;
-    height: 100%;
-    pointer-events: none;
-    zoom: 1.5;
-    background-image: url("../img/number/angle-down-solid.svg");
-    background-repeat: no-repeat, repeat;
-    background-position: 100% 50%, 0 0; 
-
-}
 .select {
     /*移除箭頭樣式*/
     appearance: none;
@@ -648,13 +627,11 @@
     -webkit-appearance: none;
     height: 40px;
     font-size: 16px;
+    /* width: calc(100% - 20px); */
     width: 100%;
     padding: 10px;
     /* border-radius: 26px; */
     border: 1px solid #333;
-}
-.select-short{
-    width: 50%;
 }
 
 /*IE隱藏箭頭樣式*/
@@ -681,7 +658,7 @@
 
 .contact-long input {
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .contact-textarea {
@@ -694,7 +671,9 @@
     border: 1px solid #333;
     resize: none;
 }
-
+.submit{
+    margin: 30px auto;
+}
 .submit:hover {
     cursor: pointer;
     transition: .5s;

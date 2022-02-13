@@ -102,10 +102,10 @@
                     <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
                         onblur="this.placeholder='地址'">
                 </li>
-                <li class="contact-form-li contact-long">
+                <li class="contact-form-li">
                     <h4>預算</h4>
-                    <div class="type-short">
-                        <select class="select select-short">
+                    <div class="type">
+                        <select class="select">
                             <option value="1">預算</option>
                             <option value="2">1萬~5萬</option>
                             <option value="3">5萬~10萬</option>
@@ -113,12 +113,15 @@
                         </select>
                     </div>
                 </li>
+                <!-- 預算只顯示一半 -->
+                <li class="contact-form-li">
+                </li>
                 <li class="contact-form-li contact-long">
                     <h4>網站需求/其他訊息(*)</h4>
                     <textarea class="contact-textarea" id="contact-textarea" cols="30" rows="10"></textarea>
                 </li>
-                <li>
-                    <button id="submit" class="submit btn mt-24 mb-60">送　出</button>
+                <li class="contact-form-li contact-long">
+                    <button id="submit" class="submit btn">送　出</button>
                 </li>
             </ul>
         </div>
