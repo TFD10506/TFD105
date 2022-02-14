@@ -88,6 +88,9 @@
     .submit{
         margin: 30px auto;
     }
+    .swal-modal{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px){
     h2 {
@@ -152,6 +155,7 @@
     .knowledge{
         display: flex;
         flex-wrap: wrap;
+        margin-top: 60px;
     }
     .knowledge-item{
         flex-direction: column;
@@ -292,12 +296,23 @@
     .service li:nth-child(even) .service-text{
         order: 0;
     }
+    .swal-modal{
+        width: 80%;
+    }
+    #version-tab>ul>li>a {
+        font-size: 14px;
+    }
     
 }
 @media screen and (max-width: 575.98px){
     .footer-img{
         max-width: 100%;
         margin-bottom: 24px;
+    }
+    #version-tab>ul>li>a {
+        font-size: 10px;
+        margin-left: 1px;    
+        padding: 10px 10px 15px;
     }
     
 }
