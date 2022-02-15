@@ -448,10 +448,10 @@
         /* background-size: contain; */
     }
     .banner-text{
-        top: 70%;
+        top: 85%;
         left: 5%;
     }
-    /* .about-banner {
+    .about-banner {
         background-image: url(../img/banner/about_banner_m.png);
     }
     
@@ -477,7 +477,7 @@
     
     .contact-banner {
         background-image: url(../img/banner/contact_banner_m.png);
-    } */
+    }
     .about-content{
         justify-content: center;
         align-items: center;
