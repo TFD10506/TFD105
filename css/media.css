@@ -20,8 +20,8 @@
             width: 100%;
         }
         .banner {
-            background-position: left bottom;
-            height: calc(80vh - 60px);
+            background-position: right top;
+            /* height: calc(80vh - 60px); */
         }
         .banner-text{
             top: 60%;
@@ -58,6 +58,39 @@
             -webkit-line-clamp: 5;
             overflow: hidden;
         }
+        .about-content-img {
+            width: 600px;
+            height: 300px;
+        }
+        .about-content-text{
+            width: 600px;
+        }
+        .about-img-2,.about-img-3{
+            display: none;
+        }
+        .about-img-1 {
+            background-image: url('../img/about_us_1.jpg');
+            max-width: 100%;
+        }
+        .about-img-1,
+        .about-img-2-rwd,
+        .about-img-3-rwd{
+            display: block;
+            width: 600px;
+            height: 300px;
+            background-size:cover;
+            background-position: center top;
+            max-width: 100%;
+        }
+        .about-img-2-rwd {  
+            background-image: url('../img/about_us_2.jpg');
+            margin-bottom: 30px;
+        }
+        
+        .about-img-3-rwd {
+            margin-top: 30px;
+            background-image: url('../img/about_us_3.jpg');
+        }
     }
 @media screen and (max-width: 960px){
     
@@ -90,6 +123,18 @@
     }
     .swal-modal{
         width: 50%;
+    }
+    .index-banner-wrapper{
+        /* width: calc(100vw); */
+        height: calc(80vh - 60px);
+    }
+    .banner {
+        background-position: right top;
+        height: calc(80vh - 60px);
+    }
+    .banner-text{
+        top: 50%;
+        left: 10%;
     }
 }
 @media screen and (max-width: 768px){
@@ -195,26 +240,28 @@
         width:70%;
         /* margin-bottom: 60px; */
     }
-    .footer-img a{
-        margin-left: 6px;
+    .fotter-icon{
+        /* margin-left: 6px; */
+        width: 36px;
+        height: 36px;
     }
     .fotter-logo{
-        width: 70%;
-        margin-left: 15%;
+        width: 50%;
+        margin-right: 12px;
     }
     .footer-img i{
         font-size: 36px;
     }
     .fotter{
         background-size: content;
-        background-position: top center;
+        background-position: right top;
     }
     .footer-wrapper{
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: 60px 0px;
     }
     .fotter-menu{
         width: 100%;
@@ -236,44 +283,20 @@
         margin-bottom: 30px;
     }
     .banner {
-        /* background-position: right top; */
-        height: calc(50vh - 60px);
-    }
-    .about-banner {
-        background-image: url(../img/banner/about_banner_m.png);
-    }
-    
-    .service-banner {
-        background-image: url(../img/banner/service_banner_m.png);
-    }
-    
-    .programme-banner {
-        background-image: url(../img/banner/programme_banner_m.png);
-    }
-    
-    .version-banner {
-        background-image: url(../img/banner/version_banner_m.png);
-    }
-    
-    .knowledge-banner {
-        background-image: url(../img/banner/knowledge_banner_m.png);
-    }
-    
-    .portfolios-banner {
-        background-image: url(../img/banner/portfolios_banner_m.png);
-    }
-    
-    .contact-banner {
-        background-image: url(../img/banner/contact_banner_m.png);
+        background-position: right top;
+        height: calc(70vh - 60px);
     }
 
     .banner-text{
-        top: 80%;
+        top: 60%;
         left: 10%;
     }
     .index-banner-wrapper{
-    width: calc(100vw);
-    height: calc(50vh - 60px);
+        /* width: calc(100vw); */
+        height: calc(50vh - 60px);
+    }
+    .programme {
+        width: 365px;
     }
     .programme p{
         height: auto;
@@ -302,11 +325,22 @@
     #version-tab>ul>li>a {
         font-size: 14px;
     }
+    .about-content-img {
+        width: 570px;
+    }
+    .about-content-text{
+        width: 570px;
+    }
+    .about-img-1,
+    .about-img-2-rwd,
+    .about-img-3-rwd{
+        width: 570px;
+    }
     
 }
 @media screen and (max-width: 575.98px){
     .footer-img{
-        max-width: 100%;
+        /* max-width: 100%; */
         margin-bottom: 24px;
     }
     #version-tab>ul>li>a {
@@ -314,5 +348,63 @@
         margin-left: 1px;    
         padding: 10px 10px 15px;
     }
+    .banner{
+        /* background-size: contain; */
+    }
+    .banner-text{
+        top: 70%;
+        left: 5%;
+    }
+    /* .about-banner {
+        background-image: url(../img/banner/about_banner_m.png);
+    }
     
+    .service-banner {
+        background-image: url(../img/banner/service_banner_m.png);
+    }
+    
+    .programme-banner {
+        background-image: url(../img/banner/programme_banner_m.png);
+    }
+    
+    .version-banner {
+        background-image: url(../img/banner/version_banner_m.png);
+    }
+    
+    .knowledge-banner {
+        background-image: url(../img/banner/knowledge_banner_m.png);
+    }
+    
+    .portfolios-banner {
+        background-image: url(../img/banner/portfolios_banner_m.png);
+    }
+    
+    .contact-banner {
+        background-image: url(../img/banner/contact_banner_m.png);
+    } */
+    .about-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-content-img {
+        width: 350px;
+        height: 200px;
+    }
+    .about-content-text{
+        width: 350px;
+    }
+    .about-img-1,
+    .about-img-2-rwd,
+    .about-img-3-rwd{
+        width: 350px;
+        height: 200px;
+    }
+    .footer-img {
+        width: 100%;
+        justify-content: center;
+    }
+    .fotter-logo{
+        width: 100%;
+        margin-right: 12px;
+    }
 }

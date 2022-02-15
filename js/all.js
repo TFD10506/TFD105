@@ -1,13 +1,3 @@
-// 載入畫面
-var $loading = $('#loading');
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        $loading.fadeOut(500);
-    }, 500);
-    setTimeout(function () {
-        document.getElementsByClassName("loading")[0].remove();
-    }, 1000);
-});
 //有時間再改掉
 AOS.init();
 // 滾輪判斷取消

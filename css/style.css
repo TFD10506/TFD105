@@ -112,7 +112,6 @@ p {
     letter-spacing: 1px;
     font-weight: 300;
 }
-
 .btn {
     display: inline-block;
     background: #FFFFFF;
@@ -366,7 +365,9 @@ p {
 .h-600 {
     height: 600px;
 }
-
+.ml-12 {
+    margin-left: 12px;
+}
 .ml-60 {
     margin-left: 60px;
 }
@@ -426,7 +427,7 @@ p {
 }
 /* 表尾 */
 .fotter {
-    background-image: url("../img/fotter/fotter.jpg");
+    background-image: url("../img/fotter/fotter.png");
     background-size: cover;
     background-repeat:repeat;
     background-position: top top;
@@ -457,6 +458,7 @@ p {
 .fotter-img a {
     display: block;
     width: 33%;
+    text-align: center;
 }
 
 .fotter-icon {
@@ -471,6 +473,7 @@ p {
 
 .fotter a {
     color: white;
+    text-align: center;
 }
 .footer-i-icon{
     display: none;
