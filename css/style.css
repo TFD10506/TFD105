@@ -189,6 +189,7 @@ p {
 
 .nav {
     /* position: fixed; */
+    display: flex;
     width: 100%;
     height: 60px;
     margin: auto;
@@ -196,13 +197,14 @@ p {
     /* background-color: black; */
     z-index: 100;
     color: white;
+    justify-content: space-around;
 }
-
+.ham-nav{
+    display: none;
+}
 .nav-width {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 1200px;
-    margin: 0 auto;
     height: 60px;
     /* padding: 10px; */
     justify-content: space-between;
@@ -426,8 +428,8 @@ p {
     background-color: #fff;
 }
 /* 表尾 */
-.fotter {
-    background-image: url("../img/fotter/fotter.png");
+.footer {
+    background-image: url("../img/footer/footer.png");
     background-size: cover;
     background-repeat:repeat;
     background-position: top top;
@@ -450,35 +452,34 @@ p {
     justify-content: center;
 }
 
-.fotter-logo {
+.footer-logo {
     width: 270px;
     margin-bottom: 24px;
 }
 
-.fotter-img a {
+.footer-img a {
     display: block;
-    width: 33%;
     text-align: center;
 }
 
-.fotter-icon {
+.footer-icon {
     width: 24px;
     font-size: 24px;
     text-align: center;
 }
 
-.fotter-icon:hover {
+.footer-icon:hover {
     opacity: 0.8;
 }
 
-.fotter a {
+.footer a {
     color: white;
     text-align: center;
 }
 .footer-i-icon{
     display: none;
 }
-.fotter-rwd-submenu{
+.footer-rwd-submenu{
     display: block;
 }
 .copyright p {
@@ -496,7 +497,7 @@ p {
     line-height: 1.5;
     letter-spacing: 2px;
 }
-.fotter-submenu-text {
+.footer-submenu-text {
     font-size: 15px;
     padding-bottom: 12px;
     text-align: center;
