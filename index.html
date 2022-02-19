@@ -18,14 +18,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
-    <!-- <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css"> -->
 
     <title>idea點子設計</title>
     <style>
-        /* 取消 */
-        /* .nav-index {
-            background: rgba(255, 255, 255, 0.9);
-        } */
     </style>
 </head>
 
@@ -84,6 +79,7 @@
     <!-- banner -->
     <!-- 只有RWD出現，避免切頭 -->
     <div class="banner-top">
+        <!-- 影片 -->
         <div class="index-banner-wrapper">
             <div class="index-banner">
                 <video class="index-banner-video" playsinline autoplay muted loop>
@@ -100,23 +96,17 @@
             <h2 class="three-block-h2" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">為何要選擇我們?</h2>
             <ul class="three-block-ul" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <li class="three-block-li">
-                    <!-- <div class="circle"> -->
                     <img src="img/why_1.png" class="mb-6" alt="有經驗的開發者">
-                    <!-- </div> -->
                     <h3 class="three-block-h3">有經驗的開發者</h3>
                     <p>工程師皆有五年以上網頁開發經驗</p>
                 </li>
                 <li class="three-block-li">
-                    <!-- <div class="circle"> -->
                     <img src="img/why_2.png" class="mb-6" alt="多方面的合作經驗">
-                    <!-- </div> -->
                     <h3 class="three-block-h3">多方面的合作經驗</h3>
                     <p>公家機關、銀行、電影院等合作經驗</p>
                 </li>
                 <li class="three-block-li">
-                    <!-- <div class="circle"> -->
                     <img src="img/why_3.png" class="mb-6" alt="有保證的售後服務">
-                    <!-- </div> -->
                     <h3 class="three-block-h3">有保證的售後服務</h3>
                     <p>皆享有兩年的網站維護服務</p>
                 </li>
@@ -153,22 +143,18 @@
                 <div class="cooperate-text ml-60">
                     <ul>
                         <li class="index-cooperate-li">
-                            <!-- <img src="img/number/n_1.jpg" class="index-icon" alt="合作第一步驟"> -->
                             <div class="index-cooperate-img index-cooperate-img-1">01</div>
                             <p class="index-icon-text">需先行了解要做的網站類型，以及要做的頁面多寡、複雜度，進行不同報價</p>
                         </li>
                         <li class="index-cooperate-li">
-                            <!-- <img src="img/number/n_2.jpg" class="index-icon" alt="合作第二步驟"> -->
                             <div class="index-cooperate-img index-cooperate-img-2">02</div>
                             <p class="index-icon-text">確認製作內容與網站細節，簽約保障雙方並支付訂金</p>
                         </li>
                         <li class="index-cooperate-li">
-                            <!-- <img src="img/number/n_3.jpg" class="index-icon" alt="合作第三步驟"> -->
                             <div class="index-cooperate-img index-cooperate-img-3">03</div>
                             <p class="index-icon-text">交付wireframe及mockup等文件，確認網站畫面及功能，並製作網站</p>
                         </li>
                         <li class="index-cooperate-li">
-                            <!-- <img src="img/number/n_4.jpg" class="index-icon" alt="合作第四步驟"> -->
                             <div class="index-cooperate-img index-cooperate-img-4">04</div>
                             <p class="index-icon-text">網站製作完成並完成測試，正式上線交付尾款，並維護兩年網站</p>
                         </li>
@@ -211,23 +197,14 @@
                 </div>
             </div>
             <div class="copyright wrapper ">
-                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、維基百科、<a
+                <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源:wixer、richart、維基百科、<a
                         href='https://pngtree.com/so/landing'>pngtree</a> 。</p>
             </div>
         </div>
     </div>
     <!-- js -->
     <script src="./js/all.js"></script>
-    <!-- <script src="./vendors/bootstrap/js/bootstrap.js"></script> -->
     <script>
-        function rwd_click() {
-            $(".footer_rwd").slideToggle();
-        }
-        // $(document).ready(function () {
-        //     $("footer_i_icon").click(function () {
-        //         $("footer_rwd").slideToggle();
-        //     });
-        // });
         // 載入畫面
         var $loading = $('#loading');
         window.addEventListener("load", function () {

@@ -5,7 +5,6 @@
 }
 
 body {
-    /* background-color: #F4F2EF; */
     background-color: #F5F5F5;
     font-family: "Noto Sans TC", "Noto Sans", "Microsoft JhengHei", "微軟正黑體", "DINAlternate", "STHeitiTC-Light", "Microsoft YaHei", "微软雅黑", "新細明體", Arial, sans-serif;
 }
@@ -55,9 +54,9 @@ a:hover{
     flex-direction: row-reverse;
 }
 
+/*兩側不留，中間平均*/
 .flex-jcsb {
     justify-content: space-between;
-    /*兩側不留，中間平均*/
 }
 
 .flex-jcfs {
@@ -185,7 +184,6 @@ p {
     transform:0;
     animation: heartbeat 0.2s infinite;
 }
-
 
 .nav {
     /* position: fixed; */
@@ -332,30 +330,6 @@ p {
 
 .img-2pic {
     width: 50%;
-}
-
-.circle {
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    width: 300px;
-    margin-bottom: 24px;
-}
-
-.circle::before {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-    width: 100%;
-}
-
-.circle img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .font-white {

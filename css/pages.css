@@ -17,6 +17,7 @@
 	left: 0;
 	display: flex;
 }
+/* loading圖示 */
 .lds-ring {
     display: inline-block;
     position: relative;
@@ -145,7 +146,6 @@
 
 .index-cooperate {
     padding-top: 60px;
-    /* padding-bottom: 60px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +154,6 @@
     text-align: center;
     line-height: 50px;
     color: white;
-    /* background-color: rgba(0, 0, 0, 0.6); */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -190,7 +189,6 @@
     width: 380px;
     line-height: 2;
     text-align: left;
-    /* margin-bottom: 10px; */
     padding: 10px 20px;
 }
 
@@ -213,25 +211,20 @@
 
 .about-content-img div:hover {
     flex-grow: 3;
-    /* opacity: 1; */
 }
-
 .about-img-1 {
     background-image: url('../img/about_us_1.jpg');
     flex-grow: 1;
-    /* opacity: 0.5; */
 }
 
 .about-img-2 {
     background-image: url('../img/about_us_2.jpg');
     flex-grow: 1;
-    /* opacity: 0.5; */
 }
 
 .about-img-3 {
     background-image: url('../img/about_us_3.jpg');
     flex-grow: 1;
-    /* opacity: 0.5; */
 }
 .about-img-rwd{
     display: none;
@@ -264,7 +257,6 @@
 }
 
 .programme {
-    /* background-image: url('../img/bg/programme_bg_1.jpg'); */
     background-color: #fff;
     border-radius: 5px;
     width: 365px;
@@ -275,10 +267,6 @@
 }
 .programme h2{
     font-size: 36px;
-}
-.programme p {
-    /* text-align-last: left; */
-    /* padding: 20px 30px; */
 }
 .fa-solid{
     width: 15px;
@@ -291,7 +279,6 @@
 }
 .programme-flex{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 .programme-flex p{
@@ -333,11 +320,6 @@
     background-color: #E4007F;
     color: white;
 }
-/* 改成標題換色 */
-/* .programme h2 {
-    color: #E4007F;
-} */
-
 
 #version-tab {
     width: 980px;
@@ -346,7 +328,6 @@
 
 
 /* 頁籤ul */
-
 #version-tab>ul {
     overflow: hidden;
     margin: 0;
@@ -360,7 +341,6 @@
 
 
 /* 頁籤上的文字 */
-
 #version-tab>ul>li>a {
     text-decoration: none;
     font-size: 24px;
@@ -386,7 +366,6 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /*頁籤div內容*/
-
 #version-tab>div {
     clear: both;
     padding: 0;
@@ -395,13 +374,9 @@
     visibility: hidden;
 }
 
-
 /*第一筆的底色*/
-
 .version-span:target~#version-tab>ul li:first-child a {
     transform: translateY(10px);
-    /* background-color: white;
-    color: #00A8B8; */
     background-color: #00A8B8;
     color: white;
 }
@@ -413,9 +388,7 @@
     border: 0;
 }
 
-
 /*頁籤變換&第一筆*/
-
 .version-span~#version-tab>ul li:first-child a,
 #version-tab-1:target~#version-tab>ul li a[href$="#version-tab-1"],
 #version-tab-2:target~#version-tab>ul li a[href$="#version-tab-2"],
@@ -423,13 +396,9 @@
     transform: translateY(0px);
     background-color: white;
     color: #00A8B8;
-    /* background-color: #00A8B8;
-    color: white; */
 }
 
-
 /*頁籤內容顯示&第一筆*/
-
 .version-span~#version-tab>div:first-of-type,
 #version-tab-1:target~#version-tab>div.version-tab-content-1,
 #version-tab-2:target~#version-tab>div.version-tab-content-2,
@@ -437,30 +406,16 @@
     visibility: visible;
     height: auto;
     background: #fff;
-    /* border: solid 1px #00A8B8; */
 }
 
 .version-span {
     display: none;
 }
 
-/* .knowledge-content {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline ;
-    text-overflow : ellipsis;
-    overflow:hidden;
-    white-space: nowrap;
-} */
-
 .knowledge-content p {
     font-size: 20px;
     line-height: 1.6;
     padding: 60px;
-    /* display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden; */
 }
 .knowledge-content {
     position: relative;
@@ -472,7 +427,6 @@
     bottom: 10%;
     right: 5%;
 }
-
 
 .knowledge-item {
     display: flex;
