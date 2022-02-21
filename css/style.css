@@ -524,3 +524,39 @@ p {
 .now-page>a{
    color: #00A8B8;
 }
+/* 動畫滑入 */
+
+.slide-in {
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.fade{
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.fade-up{
+    transform: translateY(30%);
+}
+.fade-right{
+    transform: translateX(30%);
+
+}
+.fade-left{
+    transform: translateX(-30%);
+}
+.zoom-up{
+    transform: translate3d(0,100px,0) scale(.6);
+}
+.delay-5s{
+    transition-delay: 0.5s;
+}
+.delay-1s{
+    transition-delay: 1s;
+}
+.-scroll_active {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+    transform: translateZ(0) scale(1);
+}

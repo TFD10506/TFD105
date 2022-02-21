@@ -300,6 +300,7 @@
 .programme-basic:hover ,
 .programme-basic:hover .color-main,
 .programme-basic:hover .fa-solid,
+.programme-basic:hover .slide-in,
 .programme-basic-button{
     background-color: #00A8B8;
     color: white;

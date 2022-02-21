@@ -13,9 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- 動畫 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- title icon -->
     <link rel="icon" href="./img/logo_idea_min.svg">
     <title>idea-方案介紹</title>
@@ -65,7 +62,7 @@
     </div>
     <!-- 只有RWD出現，避免切頭 -->
     <div class="banner-top">
-        <div class="programme-banner banner" data-aos="fade" data-aos-duration="1000">
+        <div class="programme-banner banner">
             <div class="banner-text wrapper">
                 <h2>
                     方案介紹<br>programme
@@ -75,79 +72,84 @@
     </div>
     <div class="overflow">
         <div class="programme-content wrapper three-block-ul mt-60">
-            <div class="programme programme-basic three-block-li p-30" data-aos="zoom-in-up" data-aos-duration="1000">
-                <h3 class="color-main">基本方案</h3>
-                <ul class="mb-24">
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>使用現有版型</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
-                        <p>調整現有版型位置</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
-                        <p>調整現有版型特效</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
-                        <p>客製化版面</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>網站兩年維護</p>
-                    </li>
-                </ul>
-                <h2 class="mb-24">$9900起</h2>
-                <a class="btn button-jittery programme-basic-button" href="contact.html">立即詢價</a>
+            <!-- 動畫轉場，不干擾hover -->
+            <div class="zoom-up slide-in">
+                <div class="programme programme-basic three-block-li p-30">
+                    <h3 class="color-main">基本方案</h3>
+                    <ul class="mb-24">
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>使用現有版型</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
+                            <p>調整現有版型位置</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
+                            <p>調整現有版型特效</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
+                            <p>客製化版面</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>網站兩年維護</p>
+                        </li>
+                    </ul>
+                    <h2 class="mb-24">$9900起</h2>
+                    <a class="btn button-jittery programme-basic-button" href="contact.html">立即詢價</a>
+                </div>
             </div>
-            <div class="programme programme-advanced three-block-li p-30" data-aos="zoom-in-up" data-aos-duration="1000"
-                data-aos-delay="500">
-                <h3 class="color-main2">進階方案</h3>
-                <ul class="mb-24">
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>使用現有版型</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>調整現有版型位置</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>調整現有版型特效</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
-                        <p>客製化版面</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>網站兩年維護</p>
-                    </li>
-                </ul>
-                <h2 class="mb-24">$19900起</h2>
-                <a class="btn button-jittery programme-advanced-button" href="contact.html">立即詢價</a>
+            <div class="zoom-up slide-in delay-5s">
+                <div class="programme programme-advanced three-block-li p-30">
+                    <h3 class="color-main2">進階方案</h3>
+                    <ul class="mb-24">
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>使用現有版型</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>調整現有版型位置</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>調整現有版型特效</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-xmark"></i>
+                            <p>客製化版面</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>網站兩年維護</p>
+                        </li>
+                    </ul>
+                    <h2 class="mb-24">$19900起</h2>
+                    <a class="btn button-jittery programme-advanced-button" href="contact.html">立即詢價</a>
+                </div>
             </div>
-            <div class="programme programme-premium three-block-li p-30" data-aos="zoom-in-up" data-aos-duration="1000"
-                data-aos-delay="1000">
-                <h3 class="color-main3">客製方案</h3>
-                <ul class="mb-24">
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>使用現有版型</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>調整現有版型位置</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>調整現有版型特效</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>客製化版面</p>
-                    </li>
-                    <li class="programme-flex"><i class="fa-solid fa-check"></i>
-                        <p>網站兩年維護</p>
-                    </li>
-                </ul>
-                <h2 class="mb-24">$29900起</h2>
-                <a class="btn button-jittery programme-premium-button" href="contact.html">立即詢價</a>
+            <div class="zoom-up slide-in delay-1s">
+                <div class="programme programme-premium three-block-li p-30">
+                    <h3 class="color-main3">客製方案</h3>
+                    <ul class="mb-24">
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>使用現有版型</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>調整現有版型位置</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>調整現有版型特效</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>客製化版面</p>
+                        </li>
+                        <li class="programme-flex"><i class="fa-solid fa-check"></i>
+                            <p>網站兩年維護</p>
+                        </li>
+                    </ul>
+                    <h2 class="mb-24">$29900起</h2>
+                    <a class="btn button-jittery programme-premium-button" href="contact.html">立即詢價</a>
+                </div>
             </div>
         </div>
     </div>
     <!-- 表尾 -->
     <div class="overflow">
-        <div class="footer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="footer fade-up slide-in">
             <div class="footer-wrapper flex-block-between mb-60 ">
                 <div class="footer-img ">
                     <a href="index.html" class="footer-logo "><img src="./img/logo_idea_footer.svg " alt="logo "></a>
