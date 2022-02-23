@@ -528,7 +528,7 @@ p {
 
 .slide-in {
     opacity: 0;
-    transition: 2s ease;
+    transition: transform 2s ,opacity ease;
 }
 
 .fade{
@@ -546,7 +546,7 @@ p {
     transform: translateX(-30%);
 }
 .zoom-up{
-    transform: translate3d(0,100px,0) scale(.6);
+    transform: translate3d(0,100px,0) scale(.8);
 }
 .delay-5s{
     transition-delay: 0.5s;

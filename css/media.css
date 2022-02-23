@@ -222,7 +222,7 @@
         color: black;
         left: 60%;
         top: 30px;
-        transition: all 0.5s;
+        transition: transform 0.5s;
         transform: translateY(-50%);
     }
     .rwd-open i.-change{
