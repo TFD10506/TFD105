@@ -215,6 +215,7 @@
     }
     .rwd-open a{
         display: block;
+        cursor: pointer;
     }
     .rwd-open i{
         display: block;
@@ -315,6 +316,9 @@
     .three-block-li,.flex-block-between{
         width: 80%;
     }
+    .three-block-li img{
+        width: 80%;
+    }
     .index-content h2::before {
         content: "";
         border-bottom: 1px solid #333;
@@ -339,6 +343,9 @@
     .cooperate-img{
         width: 100%;
         margin: 0px auto 60px auto;
+        display: flex;
+        justify-content: center;
+
     }
     .cooperate-text{
         margin: 0px auto;
@@ -379,6 +386,7 @@
     }
     .footer-img{
         width:70%;
+        
     }
     .footer-icon{
         width: 36px;
@@ -395,7 +403,9 @@
         background-size: content;
         background-position: right top;
     }
+    /* RWD消失 */
     .footer-wrapper{
+        display: none;
         width: 100%;
         flex-direction: column;
         justify-content: center;
