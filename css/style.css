@@ -563,8 +563,8 @@ p {
 #topBtn {
     display: none;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 12px;
+    right: 12px;
     z-index: 99;
     font-size: 16px;
     border: none;
@@ -572,6 +572,8 @@ p {
     background-color: #00A8B8;
     color: white;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
     padding: 15px;
     border:3px solid white;
     border-radius: 50%;
