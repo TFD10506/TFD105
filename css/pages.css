@@ -611,7 +611,14 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.contact-form .fa-asterisk{
+    color: #E4007F;
+    font-size: 12px;
+    vertical-align:top;
+    padding-top: 3px;
+    padding-left: 1px;
 
+}
 .contact-form-li {
     width: calc(50% - 20px);
     display: flex;
@@ -641,7 +648,7 @@
     /* zoom: 2; */
 }
 
-.contact-gender span {
+.contact-gender label {
     font-size: 16px;
     height: 40px;
     padding: 10px;

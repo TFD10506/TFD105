@@ -80,79 +80,81 @@
         <div class="contact-content wrapper mt-60 fade-up slide-in slide-in-rwd">
             <h3 class="mb-24">選擇你要的網站類型，開始建立自己的網站!</h3>
             <p class="mb-24">建立網站前有任何疑問嗎?歡迎聯絡我們詢問!</p>
-            <ul class="contact-form">
-                <li class="contact-form-li">
-                    <h4>姓名(*)</h4>
-                    <input class="name required" type="text" placeholder="姓名" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='姓名'">
-                </li>
-                <!-- 性別 -->
-                <li class="contact-form-li contact-gender required">
-                    <h4>性別(*)</h4>
-                    <input class="male" type="radio" name="one" />
-                    <span>先生</span>
-                    <input class="female" type="radio" name="one" />
-                    <span>小姐</span>
-                </li>
-                <li class="contact-form-li">
-                    <h4>email(*)</h4>
-                    <input class="name required" type="email" placeholder="email" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='email'">
-                </li>
-                <li class="contact-form-li">
-                    <h4>連絡電話(*)</h4>
-                    <input class="name required" type="text" placeholder="連絡電話" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='連絡電話'" maxlength="10">
-                </li>
-                <li class="contact-form-li">
-                    <h4>詢問的網站類型</h4>
-                    <div class="type">
-                        <select class="select">
-                            <option value="1">詢問的網站類型</option>
-                            <option value="2">一頁式網站</option>
-                            <option value="3">購物網站</option>
-                            <option value="4">企業形象網站</option>
-                        </select>
-                    </div>
-                </li>
-                <li class="contact-form-li">
-                    <h4>選擇方案</h4>
-                    <div class="type">
-                        <select class="select">
-                            <option value="1">選擇方案</option>
-                            <option value="2">基本方案</option>
-                            <option value="3">進階方案</option>
-                            <option value="4">客制方案</option>
-                        </select>
-                    </div>
-                </li>
-                <li class="contact-form-li contact-long">
-                    <h4>地址(地區/縣市)</h4>
-                    <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='地址'">
-                </li>
-                <li class="contact-form-li">
-                    <h4>預算</h4>
-                    <div class="type">
-                        <select class="select">
-                            <option value="1">預算</option>
-                            <option value="2">1萬~5萬</option>
-                            <option value="3">5萬~10萬</option>
-                            <option value="4">10萬以上</option>
-                        </select>
-                    </div>
-                </li>
-                <!-- 預算只顯示一半 -->
-                <li class="contact-form-li">
-                </li>
-                <li class="contact-form-li contact-long">
-                    <h4>網站需求/其他訊息(*)</h4>
-                    <textarea class="contact-textarea" id="contact-textarea" cols="30" rows="10"></textarea>
-                </li>
-                <li class="contact-form-li contact-long">
-                    <button id="submit" class="submit btn">送　出</button>
-                </li>
-            </ul>
+            <form class="contact-form" id="contact-form">
+                <ul class="contact-form">
+                    <li class="contact-form-li">
+                        <h4>姓名<i class="fa-solid fa-asterisk"></i></h4>
+                        <input class="name required" type="text" placeholder="姓名" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='姓名'">
+                    </li>
+                    <!-- 性別 -->
+                    <li class="contact-form-li contact-gender required">
+                        <h4>性別<i class="fa-solid fa-asterisk"></i></h4>
+                        <input class="male" type="radio" name="one" id="male" />
+                        <label for="male">先生</label>
+                        <input class="female" type="radio" name="one" id="female" />
+                        <label for="female">小姐</label>
+                    </li>
+                    <li class="contact-form-li">
+                        <h4>email<i class="fa-solid fa-asterisk"></i></h4>
+                        <input class="name required" type="email" placeholder="email" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='email'">
+                    </li>
+                    <li class="contact-form-li">
+                        <h4>連絡電話<i class="fa-solid fa-asterisk"></i></h4>
+                        <input class="name required" type="text" placeholder="連絡電話" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='連絡電話'" maxlength="10">
+                    </li>
+                    <li class="contact-form-li">
+                        <h4>詢問的網站類型</h4>
+                        <div class="type">
+                            <select class="select">
+                                <option value="1">詢問的網站類型</option>
+                                <option value="2">一頁式網站</option>
+                                <option value="3">購物網站</option>
+                                <option value="4">企業形象網站</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="contact-form-li">
+                        <h4>選擇方案</h4>
+                        <div class="type">
+                            <select class="select">
+                                <option value="1">選擇方案</option>
+                                <option value="2">基本方案</option>
+                                <option value="3">進階方案</option>
+                                <option value="4">客制方案</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="contact-form-li contact-long">
+                        <h4>地址(地區/縣市)</h4>
+                        <input class="name" type="text" placeholder="地址" onfocus="this.placeholder=''"
+                            onblur="this.placeholder='地址'">
+                    </li>
+                    <li class="contact-form-li">
+                        <h4>預算</h4>
+                        <div class="type">
+                            <select class="select">
+                                <option value="1">預算</option>
+                                <option value="2">1萬~5萬</option>
+                                <option value="3">5萬~10萬</option>
+                                <option value="4">10萬以上</option>
+                            </select>
+                        </div>
+                    </li>
+                    <!-- 預算只顯示一半 -->
+                    <li class="contact-form-li">
+                    </li>
+                    <li class="contact-form-li contact-long">
+                        <h4>網站需求/其他訊息<i class="fa-solid fa-asterisk"></i></h4>
+                        <textarea class="contact-textarea" id="contact-textarea" cols="30" rows="10"></textarea>
+                    </li>
+                    <li class="contact-form-li contact-long">
+                        <button id="submit" class="submit btn">送　出</button>
+                    </li>
+                </ul>
+            </form>
         </div>
     </div>
     <!-- Messenger 洽談外掛程式 Code -->
@@ -204,7 +206,8 @@
     <script src="./vendors/dist/sweetalert.min.js"></script> -->
     <script>
         // 跳出視窗
-        document.getElementById("submit").addEventListener("click", function () {
+        document.getElementById("submit").addEventListener("click", function (e) {
+            e.preventDefault();
             // 目前只判斷姓名
             let required = document.getElementsByClassName("required")[0];
             if (required.value !== "" && required.value !== null) {
