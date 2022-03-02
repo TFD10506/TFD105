@@ -232,6 +232,9 @@
     .ham-submenu{
         display: none;
     }
+    .ham-submenu-text{
+        background-color:rgb(245, 240, 240);
+    }
     .btn_switch{
         display: inline-block;
     }

@@ -108,6 +108,11 @@ function scrollFunction() {
 // 點擊回到頂端
 function topFunction() {
     $('html, body').animate({ scrollTop: 0 }, 700);
+    let sliderItems_rwd = document.querySelectorAll('.slide-in-rwd');
+    // 強制增加
+    sliderItems_rwd.forEach(function (sliderItem) {
+            sliderItem.classList.add("-scroll_active");
+    });
 }
 // -----TOP按鈕END-----
 var chatbox = document.getElementById('fb-customer-chat');
