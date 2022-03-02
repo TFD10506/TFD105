@@ -15,6 +15,51 @@ function change() {
     let icon = document.getElementsByClassName("fa-angle-down")[0];
     icon.classList.toggle("-change");
 }
+// // 點擊回到頂端
+// function topFunction() {
+//     $('html, body').animate({ scrollTop: 0 }, 700);
+//     let sliderItems_rwd = document.querySelectorAll('.slide-in-rwd');
+//     if (scrollTop == 0) {
+//         sliderItems_rwd.classList.add("-scroll_active");
+//     }
+// }
+
+// go to top
+document.addEventListener('DOMContentLoaded', function () {
+    $(function () {
+
+        var $win = $(window);
+
+        var $backToTop = $('#topBtn');
+
+        // 當user滾動到離頂部200像素時，展示回到頂部按鈕
+
+        $win.scroll(function () {
+
+            if ($win.scrollTop() > 200) {
+
+                $backToTop.show();
+            } else {
+                let sliderItems_rwd = document.querySelectorAll('.slide-in-rwd');
+                sliderItems_rwd.forEach(function (sliderItem) {
+                    sliderItem.classList.add("-scroll_active");
+                });
+                $backToTop.hide();
+            }
+
+        });
+
+        // 當user點擊按鈕時，通過動畫效果返回頭部
+
+        $backToTop.click(function () {
+
+            $('html, body').animate({ scrollTop: 0 }, 700);
+
+        });
+
+    });
+});
+// -----TOP按鈕END-----
 // 滾輪判斷取消
 // window.onscroll = function () {
 //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -31,11 +76,11 @@ function change() {
 
 // -----動畫效果區SRART-----
 // 手機板
-$( document ).ready(function() {
+$(document).ready(function () {
     let sliderItems_rwd = document.querySelectorAll('.slide-in-rwd');
     // 強制增加
     sliderItems_rwd.forEach(function (sliderItem) {
-            sliderItem.classList.add("-scroll_active");
+        sliderItem.classList.add("-scroll_active");
     });
 });
 //降低滾動判斷次數
@@ -78,7 +123,7 @@ function checkSlide(e) {
         // 判斷是否超過sliderItems 1/100高，且視窗尚未超過sliderItems底部來增加或移除css效果
         if (isHalfShown && isNotScrolledPast) {
             sliderItem.classList.add("-scroll_active");
-        }else{
+        } else {
             sliderItem.classList.remove("-scroll_active");
         }
     });
@@ -105,30 +150,21 @@ function scrollFunction() {
 //     scrollBy(0,-top);
 // }
 
-// 點擊回到頂端
-function topFunction() {
-    $('html, body').animate({ scrollTop: 0 }, 700);
-    let sliderItems_rwd = document.querySelectorAll('.slide-in-rwd');
-    // 強制增加
-    sliderItems_rwd.forEach(function (sliderItem) {
-            sliderItem.classList.add("-scroll_active");
-    });
-}
-// -----TOP按鈕END-----
+
 var chatbox = document.getElementById('fb-customer-chat');
 chatbox.setAttribute("page_id", "101336992507672");
 chatbox.setAttribute("attribution", "biz_inbox");
-window.fbAsyncInit = function() {
+window.fbAsyncInit = function () {
     FB.init({
-      xfbml            : true,
-      version          : 'v13.0'
+        xfbml: true,
+        version: 'v13.0'
     });
-  };
+};
 
-  (function(d, s, id) {
+(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+}(document, 'script', 'facebook-jssdk'));
